@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Detailing – From Scratch Page</title>
+
+  <!-- Custom stylesheet created from scratch -->
+  <link rel="stylesheet" href="css/scratch.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER DIV ===== -->
+  <div class="header" id="top">
+    <h1>My Passion for Car Detailing</h1>
+    <p>A hands-on hobby that combines precision, discipline, and pride in quality work.</p>
+    <a href="#tableau">Jump to Tableau Visualization</a>
+  </div>
+
+  <!-- ===== CONTENT DIV ===== -->
+  <div class="content">
+    <h2>What Goes Into a Quality Detail?</h2>
+
+    <!-- Ordered list with embedded unordered list -->
+    <ol>
+      <li>Exterior Services
+        <ul>
+          <li>Foam wash and rinse</li>
+          <li>Clay bar treatment</li>
+          <li>Wax or ceramic coating</li>
+        </ul>
+      </li>
+      <li>Interior Services
+        <ul>
+          <li>Vacuuming and shampooing</li>
+          <li>Leather conditioning</li>
+          <li>Dashboard and trim cleaning</li>
+        </ul>
+      </li>
+    </ol>
+
+    <!-- Image not from Bootstrap -->
+    <img src="images/detailing.jpg" alt="Car being professionally detailed" />
+
+    <h2>Why Detailing Matters</h2>
+    <p>
+      Proper detailing preserves vehicle value, improves driving comfort, and reflects
+      professionalism. Attention to small details often separates average work from
+      excellent work.
+    </p>
+
+    <!-- Embedded YouTube video -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/8c9zK4G7KqY"
+      title="Car Detailing Video"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- ===== TABLEAU DIV ===== -->
+  <div class="tableau" id="tableau">
+    <h2>Automotive Data Visualization</h2>
+
+    <!-- Live embedded Tableau visualization -->
+    <div class="tableauPlaceholder" style="width: 800px; height: 600px;">
+      <object class="tableauViz" width="800" height="600" style="display:none;">
+        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+        <param name="embed_code_version" value="3" />
+        <param name="site_root" value="" />
+        <param name="name" value="AutomotiveSales_16157768748340/Dashboard1" />
+        <param name="tabs" value="no" />
+        <param name="toolbar" value="yes" />
+      </object>
+    </div>
+    <script type="text/javascript">
+      var divElement = document.getElementsByClassName("tableauPlaceholder")[0];
+      var vizElement = divElement.getElementsByTagName("object")[0];
+      vizElement.style.display = "block";
+      var scriptElement = document.createElement("script");
+      scriptElement.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+
+    <p><a href="#top">Back to top</a></p>
+  </div>
+
+  <!-- ===== NAV DIV ===== -->
+  <div class="nav">
+    <a href="index.html">Back to Professional Site</a>
+  </div>
+
+</body>
+</html>
