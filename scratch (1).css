@@ -2,74 +2,111 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif; /* font family requirement */
-  background-color: #f4f6f8; /* custom background color */
-  color: #333; /* font color requirement */
+  font-family: Arial, Helvetica, sans-serif; /* Font family requirement */
+  background-color: #f4f6f8; /* Custom background color */
+  color: #333; /* Font color requirement */
 }
 
-/* ===== HEADER SECTION ===== */
-.header {
+/* ===== HEADER / NAVBAR ===== */
+.header, .navbar {
   background-color: #1f3a5f;
   color: #ffffff;
-  padding: 40px 20px;
+  padding: 20px 0;
   text-align: center;
 }
 
-.header a {
+.header a, .navbar a {
   color: #ffd166;
   text-decoration: none;
   font-weight: bold;
 }
 
-.header a:hover {
+.header a:hover, .navbar a:hover {
   text-decoration: underline;
 }
 
-/* ===== MAIN CONTENT ===== */
-.content {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 8px;
-}
-
-.content h2 {
-  color: #1f3a5f;
-}
-
-.content IMG_0114.jpeg {
-  .tableau-style {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  display: block;
-}
-
-/* ===== TABLEAU SECTION ===== */
-.tableau {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  text-align: center;
-}
-
-/* ===== NAVIGATION ===== */
+/* ===== NAVIGATION LINKS ===== */
 .nav {
   text-align: center;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .nav a {
   color: #1f3a5f;
   font-weight: bold;
   text-decoration: none;
+  margin: 0 10px;
 }
 
 .nav a:hover {
   text-decoration: underline;
 }
+
+/* ===== MAIN CONTENT / SECTIONS ===== */
+.content, .tableau, .image, .video, .game {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.content h2, .tableau h2, .image h2, .video h2, .game h2 {
+  color: #1f3a5f;
+  margin-bottom: 20px;
+}
+
+/* ===== IMAGE STYLING ===== */
+.image img, .tableau-style {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ===== TABLEAU EMBED ===== */
+.tableau iframe {
+  width: 100%;
+  height: 600px; /* Matches the default height of Tableau chart */
+  border: none;
+  border-radius: 8px;
+}
+
+/* ===== VIDEO EMBED ===== */
+.video iframe {
+  width: 100%;
+  height: 315px;
+  border-radius: 8px;
+}
+
+/* ===== DICE GAME BUTTON ===== */
+.game a.btn {
+  font-size: 1.2rem;
+  padding: 12px 30px;
+}
+
+/* ===== DICE GAME DISPLAY ===== */
+#dice {
+  font-size: 100px;
+  margin: 20px 0;
+}
+
+#result {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .tableau iframe, .video iframe {
+    height: 400px;
+  }
+
+  #dice {
+    font-size: 80px;
+  }
+}
+
